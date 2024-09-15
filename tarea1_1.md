@@ -18,3 +18,10 @@ Para poder hacer que git ignore estos dos archivos se crea el archivo .gitignore
 ![alt text](image-3.png)
 
 Para crear el tag es con el comando git tag v0.1
+
+Verificacion de dos pasos
+![alt text](image-4.png)
+
+| Nombre | GitHub                                      |
+| ------ | ------------------------------------------- |
+| Samuel | https://github.com/Shulkioras/DPL_A_SamuelS |
