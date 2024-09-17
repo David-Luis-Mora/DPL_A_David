@@ -25,7 +25,5 @@ Verificacion de dos pasos
 | Nombre | GitHub                                         |
 | ------ | -------------------------------------------    |
 | Samuel | https://github.com/Shulkioras/DPL_A_SamuelS    |
-| ------ | -------------------------------------------    |
 | MArio  | https://github.com/SuperWarioGalaxy/DPL_A_MARIO|
-| ------ | -------------------------------------------    |
 
