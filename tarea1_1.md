@@ -45,7 +45,11 @@ CREAR UNA RAMA  v0.2(1 PUNTO)
     git branch v0.2
     git checkout v0.2
 
+<<<<<<< HEAD
     ![alt text](image-5.png)
+=======
+![alt text](imagenes/Tarea1.2/image-5.png)
+>>>>>>> dd505da (Cambio de lugar en las imagenes)
 
 
 
@@ -61,8 +65,13 @@ AÑADIR  EL FICHERO 2.txt  (1 PUNTO)
     git branch
     echo. > 2.txt
     
+<<<<<<< HEAD
     ![alt text](image-7.png)
     ![alt text](image-6.png)
+=======
+![alt text](imagenes/Tarea1.2/image-7.png)
+![alt text](imagenes/Tarea1.2/image-6.png)
+>>>>>>> dd505da (Cambio de lugar en las imagenes)
     
 
 
@@ -82,9 +91,15 @@ CREAR UNA RAMA REMOTA v0.2 (1 PUNTO)
     git push origin v0.2
 
 
+<<<<<<< HEAD
     ![alt text](image-8.png)
     ![alt text](image-9.png)
     ![alt text](image-10.png)
+=======
+![alt text](imagenes/Tarea1.2/image-8.png)
+![alt text](imagenes/Tarea1.2/image-9.png)
+![alt text](imagenes/Tarea1.2/image-10.png)
+>>>>>>> dd505da (Cambio de lugar en las imagenes)
 
 
 MERGE DIRECTO (1 PUNTO)
@@ -100,7 +115,11 @@ MERGE DIRECTO (1 PUNTO)
     git branch
     git merge v0.2
 
+<<<<<<< HEAD
     ![alt text](image-11.png)
+=======
+![alt text](imagenes/Tarea1.2/image-11.png)
+>>>>>>> dd505da (Cambio de lugar en las imagenes)
 
 
 
@@ -134,6 +153,7 @@ MERGE CON CONFLICTO (1 PUNTO)
 
 
 
+<<<<<<< HEAD
     ![alt text](image-14.png)
     ![alt text](image-15.png)
     ![alt text](image-16.png)
@@ -141,6 +161,15 @@ MERGE CON CONFLICTO (1 PUNTO)
 
     ![alt text](image-12.png)
     ![alt text](image-13.png)
+=======
+![alt text](imagenes/Tarea1.2/image-14.png)
+![alt text](imagenes/Tarea1.2/image-15.png)
+![alt text](imagenes/Tarea1.2/image-16.png)
+
+
+![alt text](imagenes/Tarea1.2/image-12.png)
+![alt text](imagenes/Tarea1.2/image-13.png)
+>>>>>>> dd505da (Cambio de lugar en las imagenes)
 
 
 
@@ -156,7 +185,7 @@ LISTADO DE RAMAS (1 PUNTO)
 
 
 
-    ![alt text](image-17.png)
+![alt text](imagenes/Tarea1.2/image-17.png)
 
 
 ARREGLAR  CONFLICTO (1 PUNTO)
@@ -178,15 +207,24 @@ BORRAR RAMA (1 PUNTO)
 
 
 
+<<<<<<< HEAD
     ![alt text](image-18.png)
     ![alt text](image-19.png)
+=======
+![alt text](imagenes/Tarea1.2/image-18.png)
+![alt text](imagenes/Tarea1.2/image-19.png)
+>>>>>>> dd505da (Cambio de lugar en las imagenes)
 
 LISTADO DE CAMBIOS (1 PUNTO)
     Listar los distintos commits con sus ramas y sus tags.
 
     git log --oneline --decorate --tags
 
+<<<<<<< HEAD
     ![alt text](image-20.png)
+=======
+![alt text](imagenes/Tarea1.2/image-20.png)
+>>>>>>> dd505da (Cambio de lugar en las imagenes)
 
 
 CREAR UNA ORGANIZACIÓN (1 PUNTO)
