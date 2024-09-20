@@ -42,8 +42,9 @@ Crear una rama v0.2.
 Posiciona tu carpeta de trabaja en esta rama.
     
 
-    Te crea la nueva rama
-    Te posiciona en la rama v0.2
+Te crea la nueva rama
+
+Te posiciona en la rama v0.2
 
     git branch v0.2
     git checkout v0.2
@@ -233,8 +234,10 @@ Eleguimos la opcion gratuita
 
 
 ![alt text](imagenes/Tarea1.2/image-21.png)
-![alt text](imagenes/Tarea1.2/image-22.png)
+
 ![alt text](imagenes/Tarea1.2/image-23.png)
+
+Vamos
 
 
 CREAR EQUIPOS 
@@ -260,11 +263,12 @@ Hacemo lo mismo con lo de colaboradores y le asignamos menos permisos
 
 
 
-![alt text](imagenes/Tarea1.2/image-3.png)
-![alt text](imagenes/Tarea1.2/image-4.png)
-![alt text](imagenes/Tarea1.2/image-5.png)
-![alt text](imagenes/Tarea1.2/image-6.png)
-![alt text](imagenes/Tarea1.2/image-7.png)
+![alt text](imagenes/Tarea1.2/image-24.png)
+![alt text](imagenes/Tarea1.2/image-25.png)
+![alt text](imagenes/Tarea1.2/image-22.png)
+![alt text](imagenes/Tarea1.2/image-26.png)
+![alt text](imagenes/Tarea1.2/image-27.png)
+![alt text](imagenes/Tarea1.2/image-28.png)
 
 
 # CREAR UN index.html
@@ -275,19 +279,6 @@ Crear un index.html que se pueda ver como página web en la organización.
 Vamos a nuestra organizacion, vamos a repositorio y le damos New repository
 
 
-
-![alt text](imagenes/Tarea1.2/image-8.png)
-![alt text](imagenes/Tarea1.2/image-9.png)
-![alt text](imagenes/Tarea1.2/image-10.png)
-![alt text](imagenes/Tarea1.2/image-11.png)
-![alt text](imagenes/Tarea1.2/image-12.png)
-![alt text](imagenes/Tarea1.2/image-13.png)
-![alt text](imagenes/Tarea1.2/image-14.png)
-![alt text](imagenes/Tarea1.2/image-15.png)
-![alt text](imagenes/Tarea1.2/image-16.png)
-![alt text](imagenes/Tarea1.2/image-17.png)
-![alt text](imagenes/Tarea1.2/image-18.png)
-![alt text](imagenes/Tarea1.2/image-19.png)
 
 # CREAR PULL REQUESTS
 Hacer 2 forks de 2 repositorios orgdpl-tunombredeusuariodegithub.
@@ -306,6 +297,17 @@ Aceptar los pull request que lleguen a los repositorios de tu organización.
 
 
 
-
+![alt text](imagenes/Tarea1.2/image-29.png)
+![alt text](imagenes/Tarea1.2/image-30.png)
+![alt text](imagenes/Tarea1.2/image-31.png)
+![alt text](imagenes/Tarea1.2/image-32.png)
+![alt text](imagenes/Tarea1.2/image-33.png)
+![alt text](imagenes/Tarea1.2/image-34.png)
+![alt text](imagenes/Tarea1.2/image-35.png)
+![alt text](imagenes/Tarea1.2/image-36.png)
+![alt text](imagenes/Tarea1.2/image-37.png)
+![alt text](imagenes/Tarea1.2/image-38.png)
+![alt text](imagenes/Tarea1.2/image-39.png)
+![alt text](imagenes/Tarea1.2/image-40.png)
 
 
