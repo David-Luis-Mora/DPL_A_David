@@ -191,15 +191,53 @@ LISTADO DE CAMBIOS (1 PUNTO)
 
 CREAR UNA ORGANIZACIÓN (1 PUNTO)
     Crea una organización llamada orgdpl-tunombredeusuariodegithub ( ejemplo orgdpl-radav453 )
+    Vamos a nuestro GitHub, entramos a nuestro perfil y vamos a nuestra organizacion
+    Eleguimos la opcion gratuita
+
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
 
 CREAR EQUIPOS 
     Crear dos equipos en la organización orgdpl-tunombredeusuariodegithub, uno llamado administradores con más permisos y otro colaboradores con menos permisos.
     Meter a github.com/radav453 y a 2 de vuestros compañeros de clase en el equipo de administradores.
     Meter a github.com/radav453 y a 2 de vuestros compañeros de clase en el equipo de colaboradores.
 
+    En la organizacion, selecionamos la pestaña de Teams, le damos "New Team"
+    Le ponemos el nombre del team, le damos crear team.
+    Acontinuacion nos vamos a nuestra organizacion, vamos a team, selecionamos administradores y configuramos los permisos que queremos
+    Hacemo lo mismo con lo de colaboradores y le asignamos menos permisos
+
+
+
+
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image-7.png)
+
 
 CREAR UN index.html
     Crear un index.html que se pueda ver como página web en la organización.
+
+    Vamos a nuestra organizacion, vamos a repositorio y le damos New repository
+
+
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
+![alt text](image-11.png)
+![alt text](image-12.png)
+![alt text](image-13.png)
+![alt text](image-14.png)
+![alt text](image-15.png)
+![alt text](image-16.png)
+![alt text](image-17.png)
+![alt text](image-18.png)
+![alt text](image-19.png)
 
 CREAR PULL REQUESTS
     Hacer 2 forks de 2 repositorios orgdpl-tunombredeusuariodegithub.github.io de 2 organizaciones de las que sean ni administradores ni colaboradores.
