@@ -12,15 +12,15 @@ git push -u origin main
 
 Para poder hacer que git ignore estos dos archivos se crea el archivo .gitignore, donde se pone los nombre de los archivos como se muestra en la captura de pantalla y al querer añadir los nuevos cambios para el siguiente guardado no le aparece estos archivos.
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](imagenes/Tarea1.1/image.png)
+![alt text](imagenes/Tarea1.1/image-1.png)
+![alt text](imagenes/Tarea1.1/image-2.png)
+![alt text](imagenes/Tarea1.1/image-3.png)
 
 Para crear el tag es con el comando git tag v0.1
 
 Verificacion de dos pasos
-![alt text](image-4.png)
+![alt text](imagenes/Tarea1.1/image-4.png)
 
 | Nombre | GitHub                                         |
 | ------ | -------------------------------------------    |
@@ -35,9 +35,12 @@ Verificacion de dos pasos
 
 Tarea 1.2- Trabajando con Git y MarkDown II
 
-CREAR UNA RAMA  v0.2(1 PUNTO)
-    Crear una rama v0.2.
-    Posiciona tu carpeta de trabaja en esta rama.
+# CREAR UNA RAMA  v0.2(1 PUNTO)
+
+Crear una rama v0.2.
+
+Posiciona tu carpeta de trabaja en esta rama.
+    
 
     Te crea la nueva rama
     Te posiciona en la rama v0.2
@@ -52,11 +55,13 @@ CREAR UNA RAMA  v0.2(1 PUNTO)
 
 
 
-AÑADIR  EL FICHERO 2.txt  (1 PUNTO)
-    Añadir un fichero 2.txt en la rama v0.2
+# AÑADIR  EL FICHERO 2.txt  (1 PUNTO)
 
-    Miramos en que rama estamos
-    Creamos el archivo 2.txt
+Añadir un fichero 2.txt en la rama v0.2
+    
+Miramos en que rama estamos
+
+Creamos el archivo 2.txt
 
     git branch
     echo. > 2.txt
@@ -66,14 +71,19 @@ AÑADIR  EL FICHERO 2.txt  (1 PUNTO)
     
 
 
-CREAR UNA RAMA REMOTA v0.2 (1 PUNTO)
-    Subir los cambios al repositorio remoto.
+# CREAR UNA RAMA REMOTA v0.2 (1 PUNTO)
 
-    Miramos que estamos en la rama v0.2
-    Vemos los archivos que tenemos que añadir
-    Añadimos el archivo 2.txt
-    Guardamos los cambios en la rama local
-    Se sube los cambios a nuestro repositorio remoto en la rama v0.2
+Subir los cambios al repositorio remoto.
+
+Miramos que estamos en la rama v0.2
+
+Vemos los archivos que tenemos que añadir
+
+Añadimos el archivo 2.txt
+
+Guardamos los cambios en la rama local
+
+Se sube los cambios a nuestro repositorio remoto en la rama v0.2
 
     git branch
     git status
@@ -87,13 +97,19 @@ CREAR UNA RAMA REMOTA v0.2 (1 PUNTO)
 ![alt text](imagenes/Tarea1.2/image-10.png)
 
 
-MERGE DIRECTO (1 PUNTO)
-    Posicionarse en la rama master.
-    Hacer un merge de la rama v0.2 en la rama master.
+# MERGE DIRECTO (1 PUNTO)
 
-    Nos movemos a la rama main
-    Comprobamos que estamos en esta rama
-    Unimos la rama v0.2 con la main. Puede ocurrir que haya conflicto, tendriamos que resolverlo
+Posicionarse en la rama master.
+
+Hacer un merge de la rama v0.2 en la rama master.
+
+Nos movemos a la rama main
+
+Comprobamos que estamos en esta rama
+
+Unimos la rama v0.2 con la main. Puede ocurrir que haya 
+
+conflicto, tendriamos que resolverlo
 
 
     git checkout main
@@ -104,10 +120,13 @@ MERGE DIRECTO (1 PUNTO)
 
 
 
-MERGE CON CONFLICTO (1 PUNTO)
-    En la rama master poner Hola  en el fichero 1.txt y hacer commit.
-    Posicionarse en la rama v0.2 y poner Adios en el fichero 1.txt y hacer commit.
-    Posicionarse de nuevo en la rama master y hacer un merge con la rama v0.2
+# MERGE CON CONFLICTO (1 PUNTO)
+
+En la rama master poner Hola  en el fichero 1.txt y hacer commit.
+
+Posicionarse en la rama v0.2 y poner Adios en el fichero 1.txt y hacer commit.
+
+Posicionarse de nuevo en la rama master y hacer un merge con la rama v0.2
 
 
 
@@ -147,8 +166,9 @@ MERGE CON CONFLICTO (1 PUNTO)
 
 
 
-LISTADO DE RAMAS (1 PUNTO)
-    Listar las ramas con merge y las ramas sin merge.
+# LISTADO DE RAMAS (1 PUNTO)
+
+Listar las ramas con merge y las ramas sin merge.
 
     git branch --merged
     git branch --no-merged
@@ -159,14 +179,27 @@ LISTADO DE RAMAS (1 PUNTO)
 ![alt text](imagenes/Tarea1.2/image-17.png)
 
 
-ARREGLAR  CONFLICTO (1 PUNTO)
-    Arreglar el conflicto anterior y hacer un commit. Explicar como lo has arreglado incluyendo capturas de pantalla.
+# ARREGLAR  CONFLICTO (1 PUNTO)
+
+Arreglar el conflicto anterior y hacer un commit. Explicar como
+
+lo has arreglado incluyendo capturas de pantalla.
 
 
     
 BORRAR RAMA (1 PUNTO)
-    Crear un tag v0.2
-    Borrar la rama v0.2
+
+Crear un tag v0.2
+
+Mostramos los tag que hemos creado
+
+Con el D mayuscula forzamos la eliminacion 
+
+Monstramos los tag que tenemos
+
+Borrar la rama v0.2
+
+
 
     git tag v0.2
     git tag
@@ -181,72 +214,95 @@ BORRAR RAMA (1 PUNTO)
 ![alt text](imagenes/Tarea1.2/image-18.png)
 ![alt text](imagenes/Tarea1.2/image-19.png)
 
-LISTADO DE CAMBIOS (1 PUNTO)
-    Listar los distintos commits con sus ramas y sus tags.
+# LISTADO DE CAMBIOS (1 PUNTO)
+
+Listar los distintos commits con sus ramas y sus tags.
 
     git log --oneline --decorate --tags
 
 ![alt text](imagenes/Tarea1.2/image-20.png)
 
 
-CREAR UNA ORGANIZACIÓN (1 PUNTO)
-    Crea una organización llamada orgdpl-tunombredeusuariodegithub ( ejemplo orgdpl-radav453 )
-    Vamos a nuestro GitHub, entramos a nuestro perfil y vamos a nuestra organizacion
-    Eleguimos la opcion gratuita
+# CREAR UNA ORGANIZACIÓN (1 PUNTO)
+
+Crea una organización llamada orgdpl-tunombredeusuariodegithub ( ejemplo orgdpl-radav453 )
+
+Vamos a nuestro GitHub, entramos a nuestro perfil y vamos a nuestra organizacion
+
+Eleguimos la opcion gratuita
 
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](imagenes/Tarea1.2/image-21.png)
+![alt text](imagenes/Tarea1.2/image-22.png)
+![alt text](imagenes/Tarea1.2/image-23.png)
 
 
 CREAR EQUIPOS 
-    Crear dos equipos en la organización orgdpl-tunombredeusuariodegithub, uno llamado administradores con más permisos y otro colaboradores con menos permisos.
-    Meter a github.com/radav453 y a 2 de vuestros compañeros de clase en el equipo de administradores.
-    Meter a github.com/radav453 y a 2 de vuestros compañeros de clase en el equipo de colaboradores.
 
-    En la organizacion, selecionamos la pestaña de Teams, le damos "New Team"
-    Le ponemos el nombre del team, le damos crear team.
-    Acontinuacion nos vamos a nuestra organizacion, vamos a team, selecionamos administradores y configuramos los permisos que queremos
-    Hacemo lo mismo con lo de colaboradores y le asignamos menos permisos
+Crear dos equipos en la organización 
 
+orgdpl-tunombredeusuariodegithub, uno llamado administradores
 
+con más permisos y otro colaboradores con menos permisos.
 
+Meter a github.com/radav453 y a 2 de vuestros compañeros de clase en el equipo de administradores.
 
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
-![alt text](image-6.png)
-![alt text](image-7.png)
+Meter a github.com/radav453 y a 2 de vuestros compañeros de clase en el equipo de colaboradores.
 
+En la organizacion, selecionamos la pestaña de Teams, le damos "New Team"
 
-CREAR UN index.html
-    Crear un index.html que se pueda ver como página web en la organización.
+Le ponemos el nombre del team, le damos crear team.
 
-    Vamos a nuestra organizacion, vamos a repositorio y le damos New repository
+Acontinuacion nos vamos a nuestra organizacion, vamos a team,selecionamos administradores y configuramos los permisos que queremos
+
+Hacemo lo mismo con lo de colaboradores y le asignamos menos permisos
 
 
-![alt text](image-8.png)
-![alt text](image-9.png)
-![alt text](image-10.png)
-![alt text](image-11.png)
-![alt text](image-12.png)
-![alt text](image-13.png)
-![alt text](image-14.png)
-![alt text](image-15.png)
-![alt text](image-16.png)
-![alt text](image-17.png)
-![alt text](image-18.png)
-![alt text](image-19.png)
 
-CREAR PULL REQUESTS
-    Hacer 2 forks de 2 repositorios orgdpl-tunombredeusuariodegithub.github.io de 2 organizaciones de las que sean ni administradores ni colaboradores.
-    Crear una rama en cada fork.
-    En cada rama modificar el fichero index.html añadiendo vuestro nombre.
-    Con cada rama hacer un pull request.
 
-GESTIONAR PULL REQUESTS
-    Aceptar los pull request que lleguen a los repositorios de tu organización.
+![alt text](imagenes/Tarea1.2/image-3.png)
+![alt text](imagenes/Tarea1.2/image-4.png)
+![alt text](imagenes/Tarea1.2/image-5.png)
+![alt text](imagenes/Tarea1.2/image-6.png)
+![alt text](imagenes/Tarea1.2/image-7.png)
+
+
+# CREAR UN index.html
+
+Crear un index.html que se pueda ver como página web en la organización.
+
+
+Vamos a nuestra organizacion, vamos a repositorio y le damos New repository
+
+
+
+![alt text](imagenes/Tarea1.2/image-8.png)
+![alt text](imagenes/Tarea1.2/image-9.png)
+![alt text](imagenes/Tarea1.2/image-10.png)
+![alt text](imagenes/Tarea1.2/image-11.png)
+![alt text](imagenes/Tarea1.2/image-12.png)
+![alt text](imagenes/Tarea1.2/image-13.png)
+![alt text](imagenes/Tarea1.2/image-14.png)
+![alt text](imagenes/Tarea1.2/image-15.png)
+![alt text](imagenes/Tarea1.2/image-16.png)
+![alt text](imagenes/Tarea1.2/image-17.png)
+![alt text](imagenes/Tarea1.2/image-18.png)
+![alt text](imagenes/Tarea1.2/image-19.png)
+
+# CREAR PULL REQUESTS
+Hacer 2 forks de 2 repositorios orgdpl-tunombredeusuariodegithub.
+
+github.io de 2 organizaciones de las que sean ni administradores ni colaboradores.
+
+Crear una rama en cada fork.
+
+En cada rama modificar el fichero index.html añadiendo vuestro nombre.
+
+Con cada rama hacer un pull request.
+
+# GESTIONAR PULL REQUESTS
+
+Aceptar los pull request que lleguen a los repositorios de tu organización.
 
 
 
