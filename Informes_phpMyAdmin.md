@@ -131,7 +131,7 @@ De manera predeterminada no te pide Usuario el phpMyAdmin, nos vamos al panel xa
 En la línea donde está entre corchete [‘auth_type’] nos sale  entre comillas vació pues ponemos ‘http’.
 
 
-![alt text](Informe_php/image-11.png)
+![alt text](imagen/Informe_php/image-11.png)
 
 
 
@@ -164,6 +164,6 @@ Después si volvemos al navegador, ponemos localhost/php/admin nos pedirá el us
 
 
 
-![alt text](Informe_php/image-12.png)
+![alt text](imagenes/Informe_php/image-12.png)
 
 
