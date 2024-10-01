@@ -119,7 +119,7 @@ En nuestra carpeta de banco añadimos un index.html
 
 Hacemos nuestro primer commit de nuestro repositorio local
 
-![alt text](image-8.png)
+![alt text](imagenes/Tarea1.3/image-8.png)
 
 
 Subimos lo cambio a nuestro repositorio remoto
