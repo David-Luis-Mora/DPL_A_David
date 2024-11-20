@@ -2,28 +2,73 @@ Instalar vsFTP
 sudo apt update
 sudo apt install vsftpd
 
+Si no tenemos el archivo, creamos el archivo 00-installer-config.yaml
+network:
+ ethernets:
+  enpOs3:
+   dhcp4: true
+    addresses:
+     - IP/mascara
+    nameservers:
+     addresses:
+      - IP
+ version: 2
+     
+
+
  Configuración básica
 sudo nano /etc/vsftpd.conf
 
 Lo introducimos dentro del archivo
-anonymous_enable=NO               
+anonymous_enable=NO   
+anonymous_root=/srv/ftp/anonimo
 local_enable=YES                  
 write_enable=YES                 
-chroot_local_user=YES             
-allow_writeable_chroot=YES        
+chroot_local_user=YES
+chroot_list_enable=YES
+chroot_list_file=/etc/vsftpd.chroot_list
+allow_writeable_chroot=YES
 
-
-Reiniciamos el servicio
-sudo systemctl restart vsftpd
-
+Creamos los nuevo usuarios
 sudo adduser alex
 sudo adduser ethan
 
 
-sudo mkdir -p /home/nombre_usuario/ftp/upload
-sudo chmod 750 /home/nombre_usuario/ftp
-sudo chmod 750 /home/nombre_usuario/ftp/upload
-sudo chown -R nombre_usuario:nombre_usuario /home/nombre_usuario/ftp
+Accedemos al archivo
+sudo nano /etc/vsftpd.chroot_list
+
+Aqui ponemos el nombre del usuario que tenga acceso
+david
+
+
+
+Reiniciamos el servicio
+sudo service vsftpd restart
+
+
+ Configuración básica
+sudo nano /etc/vsftpd.conf
+
+Lo introducimos dentro del archivo
+userlist_enable=YES
+userlist_deny=YES
+userlist_file=/etc/vsftpd.user_list
+
+
+Accedemos al archivo
+sudo nano /etc/vsftpd.user_list
+
+Aqui ponemos a los usuario que hemos creado anteriormente
+alex
+ethan
+
+
+
+Configuración básica
+sudo nano /etc/vsftpd.conf
+
+Lo introducimos dentro del archivo
+ftpd_banner=Bienvenido al servidor David
 
 
 
@@ -35,9 +80,8 @@ xferlog_file=/var/log/vsftpd.log
 log_ftp_protocol=YES
 
 
-tail -f /var/log/vsftpd.log
+sudo tail -10 /var/log/vsftpd.log
 
-sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.key -out /etc/ssl/certs/vsftpd.crt
 
 
 sudo nano /etc/vsftpd.conf
@@ -46,16 +90,13 @@ Esto lo introducimos dentro del archivo vsftpd.conf
 rsa_cert_file=/etc/ssl/certs/vsftpd.conf
 rsa_private_key_file=/etc/ssl/private/vsftpd.conf
 ssl_enable=YES
-allow_anon_ssl=NO
-force_local_data_ssl=YES
-force_local_logins_ssl=YES
-ssl_tlsv1=YES
-ssl_sslv2=NO
-ssl_sslv3=NO
-require_ssl_reuse=NO
-ssl_ciphers=HIGH
+idle_session_timeout=10
 
 
 Reiniciamos
-sudo systemctl restart vsftpd
+sudo service vsftpd restart
+
+
+Para que la conexion sea cifrado
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.key -out /etc/ssl/certs/vsftpd.crt
 
