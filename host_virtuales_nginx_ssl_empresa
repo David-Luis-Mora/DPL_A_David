@@ -1,0 +1,115 @@
+
+Despues de a ver realizado la anterior practica, teniendo ya los host virtuales ya hecho de empresa1.com, empresa2.com, empresa3.com
+
+1. Generar certificados SSL autofirmados con OpenSSL
+
+sudo mkdir -p /etc/ssl/empresa1.com
+sudo mkdir -p /etc/ssl/empresa2.com
+sudo mkdir -p /etc/ssl/empresa3.com
+
+
+Para empresa1.com:
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/empresa1.com/empresa1.ke
+
+Para empresa2.com:
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/empresa2.com/empresa2.ke
+
+Para empresa3.com:
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/empresa3.com/empresa3.ke
+
+
+
+2. Configurar NGINX para usar SSL
+
+nano /etc/nginx/sites-available/empresa1.com
+
+# Configuración SSL
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+
+    server_name empresa1.com www.empresa1.com;
+
+    ssl_certificate /etc/ssl/empresa1.com/empresa1.crt;
+    ssl_certificate_key /etc/ssl/empresa1.com/empresa1.key;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers on;
+
+    root /var/www/empresa1.com;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+
+
+nano /etc/nginx/sites-available/empresa2.com
+
+# Configuración SSL
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+
+    server_name empresa2.com www.empresa2.com;
+
+    ssl_certificate /etc/ssl/empresa2.com/empresa2.crt;
+    ssl_certificate_key /etc/ssl/empresa2.com/empresa2.key;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers on;
+
+    root /var/www/empresa2.com;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+
+
+
+ nano /etc/nginx/sites-available/empresa3.com
+
+# Configuración SSL
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+
+    server_name empresa3.com www.empresa3.com;
+
+    ssl_certificate /etc/ssl/empresa3.com/empresa3.crt;
+    ssl_certificate_key /etc/ssl/empresa3.com/empresa3.key;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers on;
+
+    root /var/www/empresa3.com;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+} 
+
+3. Probar la configuración
+
+sudo nginx -t
+
+4. Reinicia el servicio:
+
+sudo systemctl restart nginx
+
+
+
+
+
