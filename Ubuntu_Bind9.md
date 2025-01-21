@@ -70,3 +70,6 @@ Asegúrate de que la máquina virtual tenga la configuración de red adecuada (e
 dig @<IP-de-tu-VirtualBox> example.com
 Esto debería resolver el dominio correctamente.
 
+
+ns lookup example.com ip
+ping ip
